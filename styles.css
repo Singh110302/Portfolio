@@ -1,0 +1,176 @@
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+header {
+    background: linear-gradient(135deg, #503b44, #503b44);
+    color: #1d1313;
+    text-align: center;
+    padding: 40px 20px;
+    position: relative;
+    animation: slideDown 1s ease-in-out;
+}
+
+@keyframes slideDown {
+    from { transform: translateY(-100%); }
+    to { transform: translateY(0); }
+}
+
+header h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+header p {
+    margin: 10px 0 0;
+    font-size: 1.2em;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background: #503b44;
+    padding: 10px 0;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+nav a {
+    color: #1d1313;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+    transition: color 0.3s, transform 0.3s;
+}
+
+nav a:hover {
+    color: white;
+    transform: scale(1.1);
+}
+
+section {
+    padding: 50px 20px;
+    margin: 20px auto;
+    max-width: 900px;
+    background: #694554;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+h2 {
+    color: #1d1313;
+    position: relative;
+}
+
+h2::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 3px;
+    background: #1d1313;
+    margin: 10px auto;
+    animation: grow 1s ease-in-out;
+}
+
+@keyframes grow {
+    from { width: 0; }
+    to { width: 50px; }
+}
+
+.skills ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.skills ul li {
+    background: #d5d2d2;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 5px;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.skills ul li:hover {
+    background: #b3b3b3;
+    transform: scale(1.1);
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+.aboutme .about{
+    background: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+.aboutme .about:hover{
+    transform: scale(1.05) rotate(3deg);
+}
+.educations .education{
+    background: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+.educations .education:hover{
+    transform: scale(1.05) rotate(3deg); 
+}
+.projects .project {
+    background: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.projects .project:hover {
+    transform: scale(1.05) rotate(3deg);
+}
+
+.contact-form input, .contact-form textarea {
+    width: 95%;
+    height: auto;
+    padding: 10px;
+    margin: 10px 0px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+   
+   
+}
+
+.contact-form button {
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #a29c9c;
+    transform: scale(1.05);
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #322e2e;
+    color: white;
+    margin-top: 20px;
+    animation: fadeIn 2s ease-in-out;
+}
+.body{
+    background-color:#322e2e ;
+    transform:scale();
+}
